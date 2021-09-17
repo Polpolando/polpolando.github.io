@@ -1,3 +1,8 @@
+body{
+    margin:0;
+    background-image:url(bg.png);
+    background-repeat:repeat;
+}
 .main{
     width: 100vw;
     height: 100vh;
@@ -6,20 +11,31 @@
     flex-direction: column;
 }
 .main div{
-    width: 80%;
+    width: 70%;
+    border-style:solid;
+    border-width: 6px;
+    border-color: #6a006a;
+    
+    background-color: black;
+    color:white;
+    font-family:'JetBrains Mono';
+    text-align:center;
 
     margin:10px;
 }
 .banner{
     min-height: 100px;
-    background-color: red;
+    background-image:url(banner.png);
 
+    font-family:'JetBrains Mono';
+    font-size: 24px;
+    text-align: center;
+    color:white;
     display:flex;
     justify-content: center;
     align-items: center;
 }
 .content{
-    background-color: #6a006a;
 
     display:flex;
     align-items: center;
