@@ -2,6 +2,38 @@
     width: 100vw;
     height: 100vh;
     display:flex;
+    align-items: center;
+    flex-direction: column;
+}
+.main div{
+    width: 80%;
+
+    margin:10px;
+}
+.banner{
+    min-height: 100px;
+    background-color: red;
+
+    display:flex;
     justify-content: center;
-    align-items:center;
+    align-items: center;
+}
+.content{
+    background-color: #6a006a;
+
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+}
+hr.dashed{
+    border:0;
+    border-top: 3px dashed #a60000;
+    margin:0;
+    width: 100%;
+}
+p{
+    font-family:'JetBrains Mono';
+    text-align:center;
+    margin-left: 5px;
+    margin-right: 5px;
 }
