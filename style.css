@@ -37,6 +37,9 @@ p{
     margin-left: 5px;
     margin-right: 5px;
 }
+p.pasta{
+    font-size: 10px;
+}
 @font-face {
     font-family: 'JetBrains Mono';
     src: url(fonts/ttf/JetBrainsMono-Regular.ttf);
