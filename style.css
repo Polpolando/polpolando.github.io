@@ -60,15 +60,22 @@ p.pasta{
     font-family: 'JetBrains Mono';
     src: url(fonts/ttf/JetBrainsMono-Regular.ttf);
 }
-ul {
+ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
-  }
+}
 img{
+    margin:10px;
     max-width:100%;
     max-height:100%;
     object-fit: contain;
+}
+.footer p{
+    margin:5px;
+}
+.footer{
+    padding:10px;
 }
 .footer a{
     color:white;
