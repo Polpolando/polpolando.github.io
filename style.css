@@ -41,6 +41,11 @@ body{
     align-items: center;
     flex-direction: column;
 }
+.content a{
+    color:white;
+    font-style: normal;
+    text-decoration: none;
+}
 hr.dashed{
     border:0;
     border-top: 3px dashed #a60000;

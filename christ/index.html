@@ -5,12 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script>
+        function reveal(){
+            document.getElementById("dailyVersesWrapper").style.opacity="1"
+        }
+    </script>
     <title>He loves you</title>
 </head>
 <body>
 <div class="main">
     <div class="content">
-        <img src="cross.gif" alt="">
+        <img src="cross.gif" alt="" onclick="reveal()">
+        <div id="dailyVersesWrapper"></div>
+        <script async defer src="https://dailyverses.net/get/random.js?language=niv"></script>
     </div>
 </div>
 </body>
