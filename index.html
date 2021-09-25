@@ -12,6 +12,13 @@
     <meta content="https://polpolando.github.io" property="og:url" />
     <meta content="https://cdn141.picsart.com/330216332064211.png?type=webp&to=min&r=640" property="og:image" />
     <meta content="#6a006a" data-react-helmet="true" name="theme-color" />
+
+    <script>
+        function play(){
+            var audio=document.getElementById("audio");
+            audio.play();
+        }
+    </script>
 </head>
 <body>
 <div class="main">
@@ -27,7 +34,7 @@
         setInterval(x,10);
     </script>
     <div class="content">
-        <img src="dxlogospin.gif" alt="">
+        <img src="dxlogospin.gif" alt="" onclick="play()">
         <p>Welcome to my page.</p>
         <p>This page made it very easy to get all teh info about me but whatever it's not like there are people out there tryin to dox me.</p>
         <p>Here are some facts about me.</p>
@@ -51,5 +58,6 @@
         <p>Discord: PoIando#1137</p>
     </div>
 </div>
+<audio id="audio" src="killsound.wav"></audio>
 </body>
 </html>
