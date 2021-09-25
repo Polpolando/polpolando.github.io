@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sidebar test</title>
+    <script>
+        function reveal(x){
+            var pages = document.getElementsByClassName("page");
+            for (var i = 0; i < pages.length; i ++) {
+                pages[i].style.display = 'none';
+            }
+            document.getElementById(x).style.display="block";
+        }
+    </script>
+</head>
+<body>
+<div class="main">
+    <div class="container">
+        <div class="sidebar">
+            <p>To jest sidebar</p>
+            <input type="button" value="Lorem" onclick="reveal(1)">
+            <input type="button" value="Taka Napierdalanka!!!" onclick="reveal(2)">
+        </div>
+        <div class="content">
+            <div class="page" id="1">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi corporis rerum nesciunt alias quaerat optio consectetur voluptates eius repellendus voluptatem similique vitae vel, illum at debitis sit id iusto ea.
+            </div>
+            <div class="page" id="2">
+                <p>Palenie gumy sranie do głowy to jest test sidebara i taka krótka gang napierdalanka łubu dubu jebać fubu twoja stara śmierdzi w kiblu hahahahhahahah.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

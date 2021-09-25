@@ -1,0 +1,26 @@
+body{
+    margin:0;
+    background-color: black;
+}
+.main{
+    width: 100vw;
+    height: 100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    width: 1000px;
+    max-width: 80%;
+    height: 80%;
+    background-color: #f00;
+
+    display: grid;
+    grid-template-columns: 30% auto;
+}
+.show{
+    display: block;
+}
+.page{
+    display: none;
+}
