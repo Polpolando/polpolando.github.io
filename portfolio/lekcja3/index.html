@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Lekcja 3</title>
+</head>
+<body>
+    <div class="main">
+        <form action="">
+            <div>
+                <input type="number" name="Wspolczynnik a" id="wa" onblur="sprawdzA()">x<sup>2</sup>+
+                <input type="number" name="Wspolczynnik b" id="wb" onblur="sprawdzB()">x+
+                <input type="number" name="Wspolczynnik c" id="wc" onblur="sprawdzC()"">
+            </div>
+            <br>
+            <input type="button" value="Oblicz" onclick="oblicz()">
+            <br>
+            <div id="delta"></div>
+            <div id="x0"></div>
+            <div id="x1"></div>
+            <div id="x2"></div>
+            <div id="brak"></div>
+        </form>
+    </div>
+</body>
+</html>
