@@ -6,7 +6,7 @@
  --linkHColor:#bb0000;
 }
 @font-face {
- font-family: JetBrains Mono;
+ font-family: 'JetBrains Mono';
  src: url(/fonts/ttf/JetBrainsMono-Regular.ttf);
 }
 body{
