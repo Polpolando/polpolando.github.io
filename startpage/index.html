@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>New tab</title>
+</head>
+<body onload="startTime()">
+    <div class="center-screen">
+        <form method="get" id="search" action="http://duckduckgo.com/">
+            <input type="textarea" name="q" maxlength="255" autocomplete="off" id="searchbar"/>
+            <input type="submit" value="DuckDuckGo Search" style="display: none;" />
+            <script>
+			function startTime() {
+				const today = new Date();
+	 			let h = today.getHours();
+	  			let m = today.getMinutes();
+	  			let s = today.getSeconds();
+	  			m = checkTime(m);
+	  			s = checkTime(s);
+	  			document.getElementById('searchbar').placeholder =  h + "." + m + "." + s;
+	  			setTimeout(startTime, 1000);
+				}
+			function checkTime(i) {
+			  	if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+			  	return i;
+			}
+            </script>
+        </form>
+        <div id="nav">
+            <div class="links" id="social">
+                <p>consoom</p> 
+                <ul>
+                    <li><a href="https://www.youtube.com">Youtube</a></li>
+                    <li><a href="https://twitter.com/home">Twitter</a></li>
+                    <li><a href="https://www.facebook.com">Facebook</a></li>
+                </ul>
+            </div>
+            <div class="links" id="music">
+                <p>d-_-b</p>
+                <ul>
+                    <li><a href="https://www.last.fm/user/PolPolandino">Last.FM</a></li>
+                    <li><a href="https://bandcamp.com/polandino/feed">Bandcamp</a></li>
+                    <li><a href="https://soundcloud.com/discover">Soundcloud</a></li>
+                </ul>
+            </div>
+            <div class="links" id="chan">
+                <p>chan</p>
+                <div style="display:flex">
+                <ul>
+                    <li><a href="https://boards.4channel.org/g/">/g/</a></li>
+                    <li><a href="https://boards.4chan.org/wg/">/wg/</a></li>
+                    <li><a href="https://boards.4chan.org/w/">/w/</a></li>
+                    <li><a href="https://boards.4chan.org/c/">/c/</a></li>
+                </ul>
+                <ul>
+                    <li><a href="https://boards.4chan.org/cm/">/cm/</a></li>
+                    <li><a href="https://boards.4chan.org/wsg/">/wsg/</a></li>
+                    <li><a href="https://boards.4chan.org/mu/">/mu/</a></li>
+                    <li><a href="https://boards.4chan.org/s4s">[s4s]</a></li>
+                </ul>
+                </div>
+            </div>
+            <div class="links" id="dev">
+                <p>dev</p>
+                <ul>
+                    <li><a href="https://github.com">Github</a></li>
+                    <li><a href="https://www.w3schools.com">w3schools</a></li>
+                    <li><a href="https://polpolando.github.io">polcarrd</a></li>
+                </ul>
+            </div>
+	        <div class="links" id="interests">
+                <p>interests</p>
+                <ul>
+                    <li><a href="https://digdeeper.neocities.org">digdeeper</a></li>
+                    <li><a href="https://wiki.archlinux.org">arch wiki</a></li>
+                    <li><a href="https://psychonautwiki.org/wiki/Main_Page">psychonaut wiki</a></li>
+                </ul>
+            </div>
+            <div class="links" id="typing">
+                <p>typing</p>
+                <ul>
+                    <li><a href="https://monkeytype.com">monkeytype</a></li>
+                    <li><a href="https://play.typeracer.com">typeracer</a></li>
+                    <li><a href="https://keyma.sh">keyma.sh</a></li>
+                </ul>
+            </div>
+	
+    </div>
+        <!-- <img src="./img.gif" alt=""> -->
+</body>
+</html>
