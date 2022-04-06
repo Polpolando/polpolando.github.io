@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funny</title>
+    <script>
+        function sql()
+        {
+            var input = document.getElementById("input").value;
+            var output = document.getElementById("output");
+            output.innerHTML='SELECT * FROM things WHERE name=\"'+input+'\"';
+        }
+    </script>
+</head>
+<body>
+    Search for thing's name: <input type="text" name="" id="input">
+    <input type="submit" value="Search" onclick="sql()">
+    <div id="output">SELECT * FROM things WHERE name="(search)"</div>
+</body>
+</html>
