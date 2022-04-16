@@ -61,6 +61,10 @@ function Command(com)
     if (output_field.innerHTML != "") output_field.innerHTML += "<br>";
     output_field.innerHTML += message;
 }
+function Change(id, inner)
+{
+    document.getElementById(id).innerHTML=inner;
+}
 
 
 function moveCursorToEnd(el) {

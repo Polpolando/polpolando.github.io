@@ -30,6 +30,12 @@ a{
 #modules {
 	display:flex;
 }
+#discord {
+    text-decoration: underline;
+}
+#discord:hover {
+    cursor:pointer;
+}
 
 #terminal {
     background-color: transparent;

@@ -7,3 +7,4 @@ function Clear()
 {
     output_field.innerHTML = "";
 }
+// Add cd command that will change page to the cd <page> 
