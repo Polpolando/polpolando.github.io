@@ -1,13 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
+<html ang="en">
 <head>
+
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="favicon.png">
-    <title>Polando gaming</title>
-
+    <script src="script.js"></script>
+    <title>Polando's Page</title>
     <meta property="og:site_name" content="Polpolando.github.io">
     <meta property="og:title" content="Polando"/>
     <meta property="og:type" content="website">
@@ -18,56 +16,55 @@
     <meta property="og:image:height" content="800">
     <meta property="og:url" content="https://polpolando.github.io"/>
     <meta property="twitter:card" content="summary_large_image">
+    <meta content="#ff0000" data-react-helmet="true" name="theme-color" />
 
-    <meta content="#6a006a" data-react-helmet="true" name="theme-color" />
-
-    <script>
-        function play(){
-            var audio=document.getElementById("audio");
-            audio.play();
-        }
-    </script>
 </head>
-<body>
-<div class="main">
-    <div class="banner" id="banner">
-       POLANDO'S COOL PLACE (virgins only) 
-       gaming
-    </div>
-    <script>
-        var i=0
-        function x(){
-            i++
-            document.getElementById("banner").style.backgroundPositionY=i+"px";
-        }
-        setInterval(x,10);
-    </script>
-    <div class="content">
-        <img src="dxlogospin.gif" alt="" onclick="play()">
-        <p>Welcome to my page.</p>
-        <p>This page made it very easy to get all teh info about me but whatever it's not like there are people out there tryin to dox me.</p>
-        <p>Here are some facts about me.</p>
-        <ul>
-            <li>-The nicest person you'll ever meet-</li>
-            <li>-Homestuck fan but im still normal-</li>
-            <li><a href="portfolio/index.html">-I use arch btw</a></li>
-            <li>-My all time fav game is deus ex but I wasted most of my time into TF2-</li>
-            <li><a href="./lain">-Lain simp-</a></li>
-            <li>-The only true gamer-</li>
-            <li><a href="ccrda/index.html">-No kinlist, no DNI, no BYI because i'm normal unlike you-</a></li>
-            <li><a href="sidebar/index.html">-Holder of the most objective opinions-</a></li>
-            <li>-Enjoyer of esoteric media-</li>
-            <li><a href="christ/index.html">✝</a>Did i forget to mention that i'm also extremely based?<a href="christ/index.html">✝</a></li>
-        </ul>       
-        <p>I made this page as a carrd parody or someshit.</p>
-    </div>
-    <div class="footer">
-        <a href="https://steamcommunity.com/id/arcjec/">Steam</a>
-        <a href="https://www.last.fm/user/PolPolandino">Last.FM</a>
-        <a href="http://github.com/Polpolando">Github</a>
-        <p>Discord: PoIando#1137</p>
-    </div>
-</div>
-<audio id="audio" src="killsound.wav"></audio>
+<body onload="onload()">
+
+
+	<!--
+Ta strona ma przypominac neofetch i terminal, w neofetchu maja byc ogolne informacje i jakies linki ponizej w "terminalu" ma byc bardziej dokladnie opisane prosze nie poddawaj sie :(
+	-->
+	<header>
+		<pre id="ascii" class="red">
+      .´\         .´\         .´\
+    .´   \      .´   \      .´   \
+  .´      \   .´      \   .´      \
+.´         \.´         \.´         \
+
+
+
+      .´\         .´\         .´\
+    .´   \      .´   \      .´   \
+  .´      \   .´      \   .´      \
+.´         \.´         \.´         \
+		</pre>
+		<div id="info">
+			<div id="header">
+				<span class="red">polando</span><span>@github</span><br>
+				-------------- <br>
+			</div>
+			<div id="modules">
+				<pre>
+<span class="red">distro: </span> <span>Arch Linux x86_64</span>
+<span class="red">kernel: </span> <span>linux-zen</span>
+<span class="red">shell: </span>  <span>fish</span>
+<span class="red">uptime: </span> <span id="date">foorevah 10000555 hours 69 minutes</span>
+<span class="red">wm: </span>     <span>i3/dwm</span>
+<span class="red">cpu: </span>    <span>AMD Ryzen 5 1600X</span>
+<span class="red">gpu: </span>    <span>AMD ATI Radeon RX 580</span>
+<span class="red">socials: </span><span>["<a href="https://www.last.fm/user/PolPolandino">last.fm</a>",
+          "<span id="discord">discord</span>",
+          "<a href="https://steamcommunity.com/id/arcjec/">steam.com</a>, 
+          "<a href="https://github.com">github.com</a>"]</span>
+</pre>
+			</div>
+		</div>
+	</header>
+        <main>
+            <div id="output"></div>
+            <span class="red">polando</span>@github.io ~ >> <input type="text" name="" id="terminal" autofocus onkeyup="return checkKeyDown(event)" onkeypress="return checkKeyUp(event)">
+            <script src="commands.js"></script>
+        </main>
 </body>
 </html>
