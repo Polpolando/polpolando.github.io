@@ -1,0 +1,60 @@
+body{
+	background-color: 0;
+	color:white;
+	font-family:'JetBrains Mono'
+}
+header{
+	display:flex;
+}
+header *{
+	margin: 8px;
+}
+span{
+margin: 0;
+}
+pre{
+	font-size:18px;
+}
+#ascii{
+	font-weight:bolder;
+	width: fit-content;
+	display:inline-block;
+}
+a{
+	margin:0px;
+        color:white;
+}
+#info div{
+	margin: 0px;
+}
+#modules {
+	display:flex;
+}
+#discord {
+    text-decoration: underline;
+}
+#discord:hover {
+    cursor:pointer;
+}
+
+#terminal {
+    background-color: transparent;
+    border:none;
+    color:white;
+    padding: 0;
+    box-sizing: inherit;
+    font: 18px 'JetBrains Mono';
+}
+#terminal:focus-visible{
+    outline: none;
+}
+
+.red{
+	color:red;
+}
+
+
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url(fonts/ttf/JetBrainsMono-Regular.ttf);
+}
