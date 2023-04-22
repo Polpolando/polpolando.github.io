@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="styles/XP.css">
+   <script src="script.js" defer></script>
+   <title>karls_carrd</title>
+</head>
+<body>
+   <div class="window" id="window" style="position: absolute">
+      <div class="title-bar" id="window-title">
+         <div class="title-bar-text" id="title">psy0p.exe</div>
+      </div>
+      <div class="window-body" role="tablist">
+         <div class="tabs">
+            <!-- Tab controls -->
+            <menu role="tablist">
+               <button role="tab" aria-controls="tab-about" aria-selected="true">About</button>
+               <button role="tab" aria-controls="tab-preferences" aria-selected="false">Likes and dislikes</button>
+               <button role="tab" aria-controls="tab-dni-byi" aria-selected="false">DNI and BYI</button>
+            </menu>
+            <!-- Tab content -->
+            <article role="tabpanel" id="tab-about">
+               <h4>About me.</h4><img src="" alt="" srcset="">
+               <p>
+                  My name is Karl AKA psy0p AKA netz. <br>
+                  I am 21 years old, my birthday is in June. <br>
+                  I waffle a lot and I'm very rude (ion mean it doe). <br>
+                  I will NOT help you with tech if youre retarded.
+               </p>
+            </article>
+            <article role="tabpanel" id="tab-preferences" hidden="true">
+               <ul class="tree-view">
+                  <li>
+                     Obsessions
+                     <ul>
+                        <li>Project Moon</li>
+                        <li>Capcom</li>
+                     </ul>
+                  </li>
+                  <li>
+                     Likes
+                     <ul>
+                        <li>Tech</li>
+                        <li>Metal</li>
+                        <li>Warhammer 40,000</li>
+                        <li>Polish boys</li>
+                     </ul>
+                  </li>
+                  <li>
+                     Dislikes
+                     <ul>
+                        <li>Polish boys</li>
+                     </ul>
+                  </li>
+               </ul>
+            </article>
+            <article role="tabpanel" id="tab-dni-byi" hidden="true">
+               <ul class="tree-view">
+                  <li>
+                     DNI
+                     <ul>
+                        <li>Uh</li>
+                        <li>Huh</li>
+                     </ul>
+                  </li>
+                  <li>
+                     BYI
+                     <ul>
+                        <li>I will rape your dog</li>
+                        <li>I will rape you if you're a polish boy</li>
+                        <li>I will waffle you to death</li>
+                     </ul>
+                  </li>
+               </ul>
+            </article>
+         </div>
+         <script src="tabs.js"></script>
+      </div>
+   </div>
+   <script src="window.js"></script>
+</body>
+</html>
