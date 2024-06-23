@@ -1,5 +1,7 @@
 // Plain javascript
-// The idea of this page is to fetch all the .md pages from the page repo, process them and use them as content for page
+// The idea of this script is to fetch all the .md pages from the page repo,
+// process them and use them as content for page
+// This script uses the GitHub API to fetch the contents of the pages, and showdown.js to parse the markdown files.
 // Step-by-step process:
 // 1. Initialize connection with the GitHub api
 // 2. Fetch the contents of the `/pages/` directory, the structure of that directory is as follows:
@@ -32,10 +34,28 @@
 //    the button clicked.
 //    The button should activate a function that will get the content of that page, parse it and display it on the page.
 
+import { pagesAPI } from '/js/pagesAPI.js';
+
+const GITHUB_USER = "Polpolando";
+const PAGE_REPO = "polpolando.github.io";
+const PAGES_DIR = "pages";
+const BRANCH = "dynamic-pages";
+
+// Fallback error message for something goes wrong to redirect to the old page
+const status = {
+   "code": 0,
+   "message": "Everything is fine! This shouldn't be displayed. If you can read this, contact the developer."
+}
+
+// Attempt to connect with the GitHub API
+
+const api = new pagesAPI(GITHUB_USER, PAGE_REPO, PAGES_DIR, BRANCH);
+var tree;
+tree = await api.generateTree();
+console.log(tree);
 
 // Run on load of the page
 document.addEventListener("DOMContentLoaded", function() {
    const main = document.getElementsByTagName('main')[0];
    main.innerHTML = "Script has loaded!";
 });
-
